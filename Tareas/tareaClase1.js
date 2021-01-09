@@ -3,12 +3,39 @@
 // Preguntarle estos datos al usuario y guardarlos en 2 variables
 // Ejecutar la función con estos datos
 // Impriman el resultado en la consola
-let nombre = "Maga"
-console.log("Mi nombre es " + nombre)
+
+let currentYear = prompt("Please, enter current year")
+let birthYear = prompt("Please, enter your year of birth")
+function estimateUserAge(currentYear, birthYear) {
+	return currentYear - birthYear
+}
+let userAge = estimateUserAge(currentYear, birthYear);
+
+console.log (userAge);
+
 
 // Preguntar el salario anual y calcular el salario mensual
 // Preguntar el salario mensual y calcular el anual
 // diario... semanal, por hora. etc.
+
+let actualAnnualSalary = prompt("Please, enter your annual salary")
+function calculateMonthlySalary(actualAnnualSalary) {
+    return actualAnnualSalary / 12
+}
+
+let calculatedMonthlySalary = calculateMonthlySalary(actualAnnualSalary)
+
+console.log ("Your annual salary is " + calculatedMonthlySalary);
+
+
+let actualMonthlySalary = prompt("Please, enter your monthly salary")
+function calculateAnnualSalary(actualMonthlySalary) {
+    return actualMonthlySalary * 12
+}
+
+let calculatedAnnualSalary = calculateAnnualSalary(actualMonthlySalary)
+
+console.log ("Your annual salary is " + calculatedAnnualSalary);
 
 
 /// SCOPE
