@@ -20,7 +20,8 @@ console.log (userAge);
 
 let actualAnnualSalary = prompt("Please, enter your annual salary")
 function calculateMonthlySalary(actualAnnualSalary) {
-    return actualAnnualSalary / 12
+    const monthsInAYear = 12
+    return actualAnnualSalary / monthsInAYear
 }
 
 let calculatedMonthlySalary = calculateMonthlySalary(actualAnnualSalary)
@@ -30,7 +31,8 @@ console.log ("Your monthly salary is " + calculatedMonthlySalary);
 
 let actualMonthlySalary = prompt("Please, enter your monthly salary")
 function calculateAnnualSalary(actualMonthlySalary) {
-    return actualMonthlySalary * 12
+    const monthsInAYear = 12 
+    return actualMonthlySalary * monthsInAYear
 }
 let calculatedAnnualSalary = calculateAnnualSalary(actualMonthlySalary)
 console.log ("Your annual salary is " + calculatedAnnualSalary);
