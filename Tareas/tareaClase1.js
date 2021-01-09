@@ -22,8 +22,10 @@ let actualAnnualSalary = prompt("Please, enter your annual salary")
 function calculateMonthlySalary(actualAnnualSalary) {
     return actualAnnualSalary / 12
 }
+
 let calculatedMonthlySalary = calculateMonthlySalary(actualAnnualSalary)
-console.log ("Your annual salary is " + calculatedMonthlySalary);
+
+console.log ("Your monthly salary is " + calculatedMonthlySalary);
 
 
 let actualMonthlySalary = prompt("Please, enter your monthly salary")
@@ -32,6 +34,7 @@ function calculateAnnualSalary(actualMonthlySalary) {
 }
 let calculatedAnnualSalary = calculateAnnualSalary(actualMonthlySalary)
 console.log ("Your annual salary is " + calculatedAnnualSalary);
+
 
 
 /// SCOPE
