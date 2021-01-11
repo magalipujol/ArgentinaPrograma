@@ -22,8 +22,24 @@ function sumar(numero1, numero2){
 }
  function restar(numero1, numero2){
      return numero1 - numero2
+    
  }
- 
+
+let operator = "/"
+
+var a = 1
+var b = 2
+
+if (operator = "+") {
+   console.log (sumar (a, b))
+}
+if (operator = "-") {
+    console.log (restar(a, b))
+}
+else {
+   console.log (operator + "is not a valid operator.")
+}
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
 /*function sumar(numero1, numero2) {
@@ -48,6 +64,4 @@ if (operador === '+') {
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
 console.log(
     `El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
-);
-
-*/
+); */
