@@ -17,51 +17,51 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
-function sumar(numero1, numero2){
-    return numero1 + numero2
+function add(number1, number2){
+    return number1 + number2
 }
- function restar(numero1, numero2){
-     return numero1 - numero2
+ function subtract(number1, number2){
+     return number1 - number2
     
  }
 
-let operator = "/"
+let operator = "-"
 
-var a = 1
-var b = 2
+let a = 1
+let b = 2
 
-if (operator = "+") {
-   console.log (sumar (a, b))
+if (operator === "+") {
+   console.log (add (a, b))
 }
-if (operator = "-") {
-    console.log (restar(a, b))
+if (operator === "-") {
+    console.log (subtract(a, b))
 }
 else {
-   console.log (operator + "is not a valid operator.")
+   console.log (operator + " is not a valid operator.")
 }
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
-/*function sumar(numero1, numero2) {
-    return numero1 + numero2;
+/*function sumar(number1, number2) {
+    return number1 + number2;
 }
 
-function restar(numero1, numero2) {
-    return numero1 - numero2;
+function restar(number1, number2) {
+    return number1 - number2;
 }
 
 const operador = prompt('Ingrese + o -');
-const numero1 = 1;
-const numero2 = 2;
+const number1 = 1;
+const number2 = 2;
 
 let resultado;
 if (operador === '+') {
-    resultado = sumar(numero1, numero2);
+    resultado = sumar(number1, number2);
 } else {
-    resultado = restar(numero1, numero2);
+    resultado = restar(number1, number2);
 }
 
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
 console.log(
-    `El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
+    `El resultado de ${number1} ${operador} ${number2} es ${resultado}`
 ); */
