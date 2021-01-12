@@ -17,19 +17,25 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
-function add(number1, number2){
+function add(number1, number2) {
     return number1 + number2
 }
-function subtract(number1, number2){
-     return number1 - number2
+function subtract(number1, number2) {
+    return number1 - number2
+}
+function divide(number1, number2) {
+    return number1 / number2
+}
+function multiply(number1, number2) {
+    return number1 * number2
 }
 
- let operator = "/"
+let operator = prompt("Enter an operator (+, -, /, *):")
 
 let a = 1
 let b = 2
 
-if (operator === "+") {
+/*if (operator === "+") {
     result = add (a, b);
 }
 if (operator === "-") {
@@ -44,7 +50,7 @@ console.log("The result is " + result + ".")
 let saludo = "hola"
 let nombre = "Maga"
 
-console.log (`${saludo} ${nombre} como estas`);
+console.log (`${saludo} ${nombre} como estas`);*/
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
@@ -71,3 +77,30 @@ if (operador === '+') {
 console.log(
     `El resultado de ${number1} ${operador} ${number2} es ${resultado}`
 ); */
+
+
+// TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
+//       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'
+//       'else if' el 'operador' es igual a '/' - llamar a la función 'dividir'.
+//       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
+//       else console.log - "Perdón, no conozco ese operador".
+
+let result;
+
+if (operator === "+") {
+    result = add(a, b)
+}
+else if (operator === "-") {
+    result = subtract(a, b)
+}
+else if (operator === "*") {
+    result = multiply(a, b)
+}
+else if (operator === "/") {
+    result = divide(a, b)
+}
+else {
+    console.log(`${operator} is not a valid operator.`)
+}
+
+console.log(`The result of ${a} ${operator} ${b} is ${result}`)
