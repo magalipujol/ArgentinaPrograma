@@ -20,25 +20,31 @@
 function add(number1, number2){
     return number1 + number2
 }
- function subtract(number1, number2){
+function subtract(number1, number2){
      return number1 - number2
-    
- }
+}
 
-let operator = "-"
+ let operator = "/"
 
 let a = 1
 let b = 2
 
 if (operator === "+") {
-   console.log (add (a, b))
+    result = add (a, b);
 }
 if (operator === "-") {
-    console.log (subtract(a, b))
+     result = subtract(a, b);
 }
 else {
-   console.log (operator + " is not a valid operator.")
+   result = "undefined";
 }
+
+console.log("The result is " + result + ".")
+
+let saludo = "hola"
+let nombre = "Maga"
+
+console.log (`${saludo} ${nombre} como estas`);
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
