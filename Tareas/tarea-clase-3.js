@@ -7,12 +7,12 @@
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
 
-let userName = prompt("Enter your name")
+let userName = prompt("Enter your name").toLowerCase();
 
-if (userName === "Magali"){
+if (userName === "magali"){
     console.log ("Hello, my name is also Magali!")
 }
-else if (userName === "Isabel") {
+else if (userName === "isabel") {
     console.log ("Hi Isabel, your name is the same as my mom's")
 }
 else {
@@ -25,13 +25,13 @@ else {
 
 let userAge = Number(prompt("Enter your age."))
 
-if (userAge === "20") {
+if (userAge === 20) {
     console.log ("I'm also 20 years old.")
 }
-else if (userAge < "20") {
+else if (userAge < 20) {
     console.log ("You're younger than me.")
 }
-else if (userAge > "20") {
+else if (userAge > 20) {
     console.log ("You're older than me.")
 }
 else {
@@ -56,15 +56,15 @@ if (userID === "no") {
     console.log ("You cannot enter the bar.")
 }
 else if (userID === "yes") {
-    let userAge = prompt ("Enter your age.")
-    if (userAge >= "18"){
+    let userAge = Number(prompt ("Enter your age."))
+    if (userAge >= 18){
         console.log ("You can enter the bar.")
     }
-    else if (userAge < "18") {
+    else if (userAge < 18) {
         console.log ("You cannot enter the bar.")
     }
-}
-else {
+    else {
     console.log (`${userID} is not a valid answer.`)
+    }
 }
 
