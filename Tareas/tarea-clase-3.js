@@ -7,33 +7,43 @@
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
 
-let userName = prompt("Enter your name").toLowerCase();
+let userName = (prompt("Enter your name. Please do not use accents.") || "").toLowerCase();
 
 if (userName === "magali"){
-    console.log ("Hello, my name is also Magali!")
+    console.log (`Hello, my name is also ${userName}`)
 }
 else if (userName === "isabel") {
-    console.log ("Hi Isabel, your name is the same as my mom's")
+    console.log (`Hi ${userName}, your name is the same as my mom's`)
+}
+else if (userName === "agustin") {
+    console.log (`Hi ${userName}, your name is the same as my boyfriend.`)
+}
+else if (userName.trim().length === 0){
+    console.log ("You didn't enter a name")
 }
 else {
     console.log (`Hi ${userName}`)
 }
+
+//CONSULTA cómo hago lo que hace en 10:30 min
 
 //Tarea 2:
 // Preguntar la edad del usuario
 // Hacerle saber si tiene más, menos ó la misma edad que nosotros.
 
 let userAge = Number(prompt("Enter your age."))
+const MY_AGE = 20; 
 
-if (userAge === 20) {
-    console.log ("I'm also 20 years old.")
+if (userAge === MY_AGE) {
+    console.log (`I'm also ${MY_AGE} years old.`);
 }
-else if (userAge < 20) {
-    console.log ("You're younger than me.")
+else if (userAge < MY_AGE) {
+    console.log ('You\'re younger than me.')
 }
-else if (userAge > 20) {
+else if (userAge > MY_AGE) {
     console.log ("You're older than me.")
 }
+
 else {
     console.log (`${userAge} is not a valid value.`)
 }
@@ -49,22 +59,22 @@ else {
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
-let userID = prompt ("Do you have ID?").toLowerCase();
+let userHasID = prompt ("Do you have ID?").toLowerCase();
+const yesAnswer = ["yes", "si"]
+const noAnswer = "no"
 
-let userAge;
-if (userID === "no") {
+if (userHasID === noAnswer) {
     console.log ("You cannot enter the bar.")
 }
-else if (userID === "yes") {
-    let userAge = Number(prompt ("Enter your age."))
+else if (yesAnswer.includes(userHasID)) {
     if (userAge >= 18){
-        console.log ("You can enter the bar.")
+        console.log (`${userName}, you can enter the bar.`)
     }
     else if (userAge < 18) {
-        console.log ("You cannot enter the bar.")
+        console.log (`${userName}, you cannot enter the bar.`)
     }
     else {
-    console.log (`${userID} is not a valid answer.`)
+    console.log (`${userHasID} is not a valid answer.`)
     }
 }
 
