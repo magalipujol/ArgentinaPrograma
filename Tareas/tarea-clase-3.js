@@ -57,14 +57,14 @@ else if (userAge === "") {
 // Si no tiene documento, no dejarlo entrar al bar.
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
+console.log (xd)
 
 let userHasID = (prompt ("Do you have ID?") || "").toLowerCase();
 const yesAnswer = ["yes", "si"]
 const noAnswer = "no"
 const ageRequirementToEnter = 18; 
+const xd = "gugu"
 
-//CONSULTA tiene sentido un nombre tan largo?
-//CONSULTA estas constantes sirven para lo que esté más arriba de donde están definidas?
 
 if (userHasID === noAnswer) {
     console.log (`${userName}, you cannot enter the bar because you don't have ID.`)
