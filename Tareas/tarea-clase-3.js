@@ -25,8 +25,6 @@ else {
     console.log (`Hi ${userName}`)
 }
 
-//CONSULTA cómo hago lo que hace en 10:30 min
-
 //Tarea 2:
 // Preguntar la edad del usuario
 // Hacerle saber si tiene más, menos ó la misma edad que nosotros.
@@ -43,11 +41,12 @@ else if (userAge < MY_AGE) {
 else if (userAge > MY_AGE) {
     console.log ("You're older than me.")
 }
-
-else {
-    console.log (`${userAge} is not a valid value.`)
+else if (userAge  === null) {
+    console.log ("You have to enter an answer.")
 }
-
+else if (userAge === "") {
+    console.log ("You have to enter an answer.")
+}
 
 
 //Tarea 3:
@@ -59,22 +58,28 @@ else {
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
-let userHasID = prompt ("Do you have ID?").toLowerCase();
+let userHasID = (prompt ("Do you have ID?") || "").toLowerCase();
 const yesAnswer = ["yes", "si"]
 const noAnswer = "no"
+const ageRequirementToEnter = 18; 
+
+//CONSULTA tiene sentido un nombre tan largo?
+//CONSULTA estas constantes sirven para lo que esté más arriba de donde están definidas?
 
 if (userHasID === noAnswer) {
-    console.log ("You cannot enter the bar.")
+    console.log (`${userName}, you cannot enter the bar because you don't have ID.`)
 }
 else if (yesAnswer.includes(userHasID)) {
-    if (userAge >= 18){
+    if (userAge >= ageRequirementToEnter){
         console.log (`${userName}, you can enter the bar.`)
     }
-    else if (userAge < 18) {
-        console.log (`${userName}, you cannot enter the bar.`)
-    }
-    else {
-    console.log (`${userHasID} is not a valid answer.`)
+    else if (userAge < ageRequirementToEnter) {
+        console.log (`${userName}, you cannot enter the bar because you have to be over 18 years old.`)
     }
 }
-
+else if (userHasID  === null) {
+    console.log ("You have to enter an answer.")
+}
+else if (userHasID === "") {
+    console.log ("You have to enter an answer.")
+}
