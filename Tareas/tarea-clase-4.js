@@ -23,7 +23,6 @@ while (number > 0){
 
 
 
-
 // TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 // Cuenta del 1 al 50 e imprime los números:
 // * Si un número es múltiplo de tres, imprime 'Fizz'.

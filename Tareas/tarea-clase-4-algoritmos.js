@@ -1,15 +1,14 @@
-//Link original y créditos a https://github.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
+//Link original y créditos a https://gith>b.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
 
 /*
-Estos desafíos de coding están enfocados para los principiantes, por lo tanto las soluciones fueron implementadas
+Estos desafíos de coding están enfocados para los principiantes, por lo tanto 
+las soluciones fueron implementadas
 usando  elementos de programación simples y clásicos.
 */
 
 /*
-Desafío de programación #1: Imprimí los números del 1 al 10
- Resultado: 10 9 8 7 6 5 4 3 2 1
- Desafìo de programación  #2: Imprimí los números impares del 1 al 100
- 1 3 5 ... 99
+
+ 
 Desafío de programación #3: Imprimí la tabla de multiplicación del 7
  7x0 = 0
  7x1 = 7
@@ -116,3 +115,39 @@ Desafío de programación #51. Find the frequency of characters inside a string.
 Desafío de programación #52. Calculate Fibonacci(500) with high precision (all decimals)
 Desafío de programación #53. Calculate 70! with high precision (all decimals)
  */
+
+//Desafío de programación #1: Imprimí los números del 1 al 10
+//Resultado: 10 9 8 7 6 5 4 3 2 1 <>
+
+/*for (let number = 1 ; number <= 10 ;number++){
+  console.log(number)
+}
+
+//Desafìo de programación  #2: Imprimí los números impares del 1 al 100
+//1 3 5 ... 99
+
+let number = 1
+if (number%2 === 0){
+  number++
+}
+for (; number <= 100; number +=2){ 
+  console.log(number)
+}
+//Desafío de programación #3: Imprimí la tabla de multiplicación del 7
+
+for (i = 0; i <= 10; i++){
+  let multiplicationResult = i * 7
+  console.log (i + "x7 = " + multiplicationResult)
+}
+//Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1 al 9
+
+for (let j = 1; j <= 10; j++){
+  for (let i = 1; i <= 10; i++) {
+    console.log(i * j)
+  }
+}
+*/
+//Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
+ array = [1,2,3,4,5,6,7,8,9,10];
+ 
+//Desafío de programación #6: Calcula 10! (10 factorial)
