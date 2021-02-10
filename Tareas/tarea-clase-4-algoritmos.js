@@ -150,9 +150,36 @@ for (let j = 1; j <= 10; j++){
 array = [1,2,3,4,5,6,7,8,9,10];
 console.log(array.reduce((a, b) => a + b));
 console.log((array.length * (array.length + 1)) / 2)
-*/
 //Desafío de programación #6: Calcula 10! (10 factorial)
-for (let i = 4; i >= 2; i--) {
-  let j = (i *(i-1))
-  console.log(j)
+*/
+function factorial(number) {
+  let answer = 1;
+  for (let i = number; i >= 1; i--) {
+    answer = answer * i
+  }
+  return answer
+}
+
+function sum(number) {
+  let answer = 0;
+  for (let i = number; i >= 1; i--) {
+    answer = answer + i
+  }
+  return answer
+}
+
+function reduce1toN(number, operator, neutral) {
+  let answer = neutral;
+  for (let i = number; i >= 1; i--) {
+    answer = operator(answer, i)
+  }
+  return answer
+}
+
+function sum(number) {
+  return reduce1toN(number, (a, b) => a + b, 0)
+}
+
+function factorial(number) {
+  return reduce1toN(number, (a, b) => a * b, 1)
 }
