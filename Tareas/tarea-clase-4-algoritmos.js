@@ -146,8 +146,13 @@ for (let j = 1; j <= 10; j++){
     console.log(i * j)
   }
 }
-*/
 //Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
- array = [1,2,3,4,5,6,7,8,9,10];
- 
+array = [1,2,3,4,5,6,7,8,9,10];
+console.log(array.reduce((a, b) => a + b));
+console.log((array.length * (array.length + 1)) / 2)
+*/
 //Desafío de programación #6: Calcula 10! (10 factorial)
+for (let i = 4; i >= 2; i--) {
+  let j = (i *(i-1))
+  console.log(j)
+}
