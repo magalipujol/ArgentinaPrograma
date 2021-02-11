@@ -151,7 +151,6 @@ array = [1,2,3,4,5,6,7,8,9,10];
 console.log(array.reduce((a, b) => a + b));
 console.log((array.length * (array.length + 1)) / 2)
 //Desafío de programación #6: Calcula 10! (10 factorial)
-*/
 function factorial(number) {
   let answer = 1;
   for (let i = number; i >= 1; i--) {
@@ -183,3 +182,61 @@ function sum(number) {
 function factorial(number) {
   return reduce1toN(number, (a, b) => a * b, 1)
 }
+
+//Desafío de programación #7: Calcula la suma de todos los números impares 
+//mayores que 10 y menores que 30
+
+function addTwo(init, end) {
+  for (i = init; i <= end; i += 2) {
+    console.log(i)
+  }
+}
+
+function oddNumbersFromTo(init, end) {
+  if (init % 2 === 0) {
+    init = init + 1
+  }
+  addTwo(init, end)
+}
+
+oddNumbersFromTo(10, 30);
+//Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
+function CelsiusToFahrenheit (Celsius){
+  return Celsius * 1.8 + 32
+}
+
+//Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
+function FahrenheitToCelsius (Fahrenheit){
+  return (Fahrenheit - 32) / 1.8
+}
+
+//Desafío de programación #12: Crea una función que reciba un array de números y devuelva un array conteniendo 
+//solo los números positivos
+array = [10, 12, 5, 4, 9]
+function returnEvenNumber(array) {
+  let evenNumberArray = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      evenNumberArray.push(array[i]);
+    }
+  }
+  return evenNumberArray
+}
+
+console.log(returnEvenNumber(array))
+*/
+//Desafío de programación #13: Find the maximum number in an array of numbers
+array = [2, 5, 64, 3, 50];
+function findMaxNumber (array) {
+  let maxNumber = array[0];
+  for (i = 1; i < array.length; i++) {
+    if (array[i] > array[i - 1]) {
+      maxNumber = array[i];
+    }
+  }
+  return maxNumber
+}
+//TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+console.log(findMaxNumber(array))
+//Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci sin recursión
+//Fibonacci (lo buscan en google si no lo saben o no se acuerdan)
