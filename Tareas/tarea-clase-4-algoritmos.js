@@ -224,19 +224,36 @@ function returnEvenNumber(array) {
 }
 
 console.log(returnEvenNumber(array))
-*/
 //Desafío de programación #13: Find the maximum number in an array of numbers
 array = [2, 5, 64, 3, 50];
 function findMaxNumber (array) {
   let maxNumber = array[0];
   for (i = 1; i < array.length; i++) {
-    if (array[i] > array[i - 1]) {
+    if (maxNumber < array[i]) {
       maxNumber = array[i];
     }
   }
   return maxNumber
 }
-//TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
 console.log(findMaxNumber(array))
-//Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci sin recursión
-//Fibonacci (lo buscan en google si no lo saben o no se acuerdan)
+//Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci 
+//sin recursión
+*/
+function FibonacciSuccession (end){
+  FibonacciArray = [0, 1];
+  for (i = 1; i < end - 1; i++){
+    FibonacciArray.push(FibonacciArray[i] + FibonacciArray[i - 1])
+  }
+  return FibonacciArray
+}
+
+console.log(FibonacciSuccession(10)) 
+
+
+//TODOOOOOOOOOOOOOOOOOOO
+function SuccessionFibonacci (end){
+  for (i = 1; i = end; i++){
+    
+}
+}
