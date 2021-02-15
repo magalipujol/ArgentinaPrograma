@@ -1,6 +1,6 @@
 //Link original y créditos a https://gith>b.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
 
-const { test, expect } = require("@jest/globals");
+
 
 /*
 Desafío de programación #18: Imprimir los primeros 100 números primos
@@ -232,7 +232,6 @@ function nthFibonacci (number) {
     return nthFibonacci (number - 1) + nthFibonacci (number - 2)
   }
 }
-*/
 
 //Desafío de programación #16: Crear una función que dado un número retorne un Boolean (true/false) 
 //dependiendo si es primo o no.
@@ -250,8 +249,9 @@ function isPrime (number){
 //guga: Desafío de programación #19: Crear una función que retorne un array con los primeros números "n-primos" mayores que un número particular definido "alComienzo"
 //Ejemplo:
 //Quiero los primeros 4 números primos mayores que 5, el resultado debería ser: [7,11,13,17,19]
+*/
 
-function nPrimeNumbers (init, length){
+export function nPrimeNumbers (init, length){
   let primeNumbers = [];
   for (let i = init + 1; primeNumbers.length < length; i++){
     if (isPrime(i)) {
@@ -260,10 +260,23 @@ function nPrimeNumbers (init, length){
   }
   return primeNumbers
 }
-module.exports = nPrimeNumbers
 
 //Desafío de programación #22: Invertir un array
+function invertArray(array) {
+  let invertedArray = [];
+  for (let i = 1; i <= array.length; i++) {
+    invertedArray.push(array[array.length - i]) 
+  }
+  return invertedArray
+}
+
 //Desafío de programación #32. Create a function that will capitalize the first letter of each word in a text
+let text = ("gugi ta bien");
+export function capitalizeFirstLetter (text){
+  for (let i = 0; i <= text.length; i++){
+    console.log(i)
+  }
+} 
 //Desafío de programación #40. Implement the bubble sort algorithm for an array of numbers
 //guga: Desafío de programación #41. Create a function to calculate the distance between two points defined by their x, y coordinates
 //Desafío de programación #45. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers on an unlimited number of levels)
