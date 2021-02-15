@@ -233,6 +233,7 @@ function nthFibonacci (number) {
   }
 }
 
+document.write(titleCase("I'm a little tea pot"));
 //Desafío de programación #16: Crear una función que dado un número retorne un Boolean (true/false) 
 //dependiendo si es primo o no.
 function isPrime (number){
@@ -249,7 +250,6 @@ function isPrime (number){
 //guga: Desafío de programación #19: Crear una función que retorne un array con los primeros números "n-primos" mayores que un número particular definido "alComienzo"
 //Ejemplo:
 //Quiero los primeros 4 números primos mayores que 5, el resultado debería ser: [7,11,13,17,19]
-*/
 
 export function nPrimeNumbers (init, length){
   let primeNumbers = [];
@@ -269,14 +269,21 @@ function invertArray(array) {
   }
   return invertedArray
 }
+*/
 
 //Desafío de programación #32. Create a function that will capitalize the first letter of each word in a text
-let text = ("gugi ta bien");
-export function capitalizeFirstLetter (text){
-  for (let i = 0; i <= text.length; i++){
-    console.log(i)
+function capitalizeFirstLetter(text) {
+  let separatedText = text.toLowerCase().split(" ");
+  for (let wordIndex = 0; wordIndex < separatedText.length; wordIndex++) {
+    separatedText[wordIndex] = separatedText[wordIndex].charAt(0).toUpperCase() + separatedText[wordIndex].substr(1)
   }
-} 
+  return separatedText.join(" ")
+}
+
+
+
+
 //Desafío de programación #40. Implement the bubble sort algorithm for an array of numbers
-//guga: Desafío de programación #41. Create a function to calculate the distance between two points defined by their x, y coordinates
+//guga: Desafío de programación #41. Create a function to calculate the distance 
+//between two points defined by their x, y coordinates
 //Desafío de programación #45. Create a function to calculate the sum of all the numbers in a jagged array (array contains numbers or other arrays of numbers on an unlimited number of levels)
