@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous">
     <title>Pay calculator</title>
 </head>
-<body>
+<body style="text-align: center;">
     <form>
-
-        <label for="annual-pay">Salario anual<br></label>
-        <input type="number" id="annual-pay"><br>
-        <label for="monthly-pay">Salario mensual<br></label>
-        <input type="text" disabled id="monthly-pay"/>
+        <div class="form-group" style="padding: 2%">
+            <label for="annual-pay">Annual pay<br></label>
+            <input type="number" id="annual-pay"><br>
+        </div>
+        <div class="form-group" style="padding: 2%">
+            <label for="monthly-pay">Monthly pay<br></label>
+            <input type="text" disabled id="monthly-pay"/><br>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-left: 15.5%;" id="submit">Calculate</button>
     </form>
-    <script li></script>
+    <script src="tarea-clase-5-formularioSueldo.js"></script>    
 </body>
 </html>
