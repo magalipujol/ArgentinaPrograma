@@ -4,9 +4,24 @@
 // en una caja de texto deshabilitada. 
 // --> <input type="text" disabled id="salario-mensual"/>
 
-const $annualPay = document.querySelector('#annual-pay').value
-
-console.log($annualPay)
+const $annualPay = Number(document.querySelector('#annual-pay')).value
+const $monthlyPay = $annualPay / 12
 
 const $btnSubmit = document.querySelector('#submit')
+
+
+
+$btnSubmit.onclick = function(){
+    document.querySelector('#monthly-pay') = $monthlyPay
+    return false;
+}
+
+document.querySelector('#submit').onclick = function() {
+    const annualPay = Number(document.querySelector('#annual-pay').value)
+    const monthlyPay = annualPay / 12
+
+    document.querySelector('#monthly-pay').value = monthlyPay
+    return false
+}
+
 
