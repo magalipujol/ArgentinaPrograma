@@ -17,7 +17,6 @@ const $btnSubmit = document.querySelector('#submit')
 const $totalTime = document.querySelector('#total-time')
 
 // getting all hours, minutes and seconds in different NodeLists
-// TODO check number()
 var $hoursNodeList = document.querySelectorAll('.class .hours')
 var $minutesNodeList = document.querySelectorAll('.class .minutes')
 var $secondsNodeList = document.querySelectorAll('.class .seconds')
@@ -36,9 +35,9 @@ for (let index = 0; index < $secondsNodeList.length; index++) {
 
 // calculate actual time
 totalMinutes += secondsToMinutes(totalSeconds)
-totalSeconds = secondsLefts(totalSeconds)
+totalSeconds = secondsRemainder(totalSeconds)
 totalHours += minutesToHours(totalMinutes)
-totalMinutes = minutesLefts(totalMinutes)
+totalMinutes = minutesRemainder(totalMinutes)
 
 
 $btnSubmit.onclick = function() {
@@ -55,11 +54,11 @@ function minutesToHours(minutes) {
 
 // functions that calculate the seconds and minutes that cannot be converted to 
 // a whole number of minutes and hours
-// ? se dice lefts
-function secondsLefts(seconds) {
+// ? se dice Remainder
+function secondsRemainder(seconds) {
     return seconds - (secondsToMinutes(totalSeconds) * 60)
 }
 
-function minutesLefts(minutes) {
+function minutesRemainder(minutes) {
     return (minutes - (minutesToHours(totalMinutes) * 60))
 }
