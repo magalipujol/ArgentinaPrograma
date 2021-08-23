@@ -56,9 +56,9 @@ function minutesToHours(minutes) {
 // a whole number of minutes and hours
 // ? se dice Remainder
 function secondsRemainder(seconds) {
-    return seconds - (secondsToMinutes(totalSeconds) * 60)
+    return seconds % 60 
 }
 
 function minutesRemainder(minutes) {
-    return (minutes - (minutesToHours(totalMinutes) * 60))
+    return minutes % 60
 }
