@@ -13,17 +13,19 @@
     }
   </style>
   <body>
-    <form id="firstQuestion">
-        <label for="cantidadIntegrantes">Cantidad de integrantes</label>
-        <input type="number" name="cantidadIntegrantes" id="cantidadIntegrantes">
-        <button type="button" id="siguienteBtn">Siguiente</button>
-    </form>
-    <form id="secondQuestion" class="hidden">
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="">
-      <label for="edad">Edad</label>
+    <div class="m-4">
 
-    </form>
+      <form id="firstQuestion">
+        <input type="number" name="cantidadIntegrantes" id="cantidadIntegrantes">
+
+        <button type="button" id="siguienteBtn">Siguiente</button>
+        <h7 id="formVacio" style="color: red;"></7>
+      </form>
+      <div id="integrantes">
+
+      </div>
+
+    </div>
   </body>
   <script src="main.js"></script>
 </html>
